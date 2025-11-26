@@ -2,7 +2,7 @@ package com.sight.ecommerce.dto;
 
 import javax.validation.constraints.NotNull;
 
-import com.sight.ecommerce.models.Product;
+import com.sight.ecommerce.model.Product;
 
 public class ProductDto {
   

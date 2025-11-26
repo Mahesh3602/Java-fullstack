@@ -1,26 +1,23 @@
-package com.sight.ecommerce.models;
-
-import javax.validation.constraints.NotBlank;
+package com.sight.ecommerce.model;
 
 
 import jakarta.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name = "categories")
+@Table(name="categories")
 public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "category_name")
+    @Column(name="category_name")
     private @NotBlank String categoryName;
-
     private @NotBlank String description;
     private @NotBlank String imageUrl;
-    
-    public Category() {
-    }
+
+    public Category(){}
 
     public Category(@NotBlank String categoryName, @NotBlank String description, @NotBlank String imageUrl) {
         this.categoryName = categoryName;
@@ -28,13 +25,6 @@ public class Category {
         this.imageUrl = imageUrl;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getCategoryName() {
         return categoryName;
@@ -60,4 +50,11 @@ public class Category {
         this.imageUrl = imageUrl;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

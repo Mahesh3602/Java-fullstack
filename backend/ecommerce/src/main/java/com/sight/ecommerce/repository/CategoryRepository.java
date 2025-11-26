@@ -3,7 +3,7 @@ package com.sight.ecommerce.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sight.ecommerce.models.Category;
+import com.sight.ecommerce.model.Category;
 
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Integer> {

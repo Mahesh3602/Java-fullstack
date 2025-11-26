@@ -25,6 +25,8 @@ Dependency: Spring Web,Spring Data JPA, PostgresSQL Driver, Spring Boot DevTools
 # create new package service and CategoryService class
 # create new package controller and CategoryController class
 
+- test through postman
+
 
 
 

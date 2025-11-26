@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sight.ecommerce.models.Category;
+import com.sight.ecommerce.model.Category;
 import com.sight.ecommerce.repository.CategoryRepository;
 
 @Service
@@ -15,7 +15,7 @@ public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    public List listCategories() {
+    public List<Category> listCategories() {
         return categoryRepository.findAll();
     }
 
