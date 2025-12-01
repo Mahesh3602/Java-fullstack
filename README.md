@@ -9,3 +9,7 @@ vue create fe-ecommerce
 npm run serve
 
 ++++++++++++++++
+
+# modify index.html in public folder
+
+# 
